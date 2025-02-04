@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f8f3d4;
+    margin: 0;
+}
+
+/* 計分標題 */
+h1 {
+    margin: 10px 0;
+}
+
+/* 遊戲容器 */
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 85vh;
+}
+
+/* 確保遊戲區域固定 9:16 比例 */
+#game-area {
+    position: relative;
+    width: 90vw;
+    max-width: 450px;
+    aspect-ratio: 9 / 16;
+    background-color: #fffbcc;
+    border: 5px solid #d4a017;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* 切換按鈕 */
+.nav-button {
+    background-color: #d4a017;
+    color: white;
+    border: none;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.nav-button:hover {
+    background-color: #b3810b;
+}
+
+/* 彩蛋樣式 */
+.egg {
+    position: absolute;
+    width: 12%;
+    max-width: 50px;
+    height: auto;
+}
+
+.egg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 遊戲結束畫面 */
+.game-over {
+    position: absolute;
+    width: 80%;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.game-over img {
+    width: 100%;
+    display: block;
+}
